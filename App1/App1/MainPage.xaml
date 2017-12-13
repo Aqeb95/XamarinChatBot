@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+    <Grid HorizontalOptions="Fill" VerticalOptions="Fill" RowSpacing="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*" >
+            </RowDefinition>
+            <RowDefinition Height="*" >
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <WebView x:Name="webview" Grid.Row="0" Source="https://webchat.botframework.com/embed/T4GDemoApp?s=SECRET_CODE"
+                WidthRequest="300" HeightRequest="320"></WebView>
+
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" >
+                </RowDefinition>
+                <RowDefinition Height="*" >
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="logo.png" Grid.Row="0" VerticalOptions="Fill" Aspect="AspectFit" ></Image>
+            <Image Source="bot.png" Grid.Row="1" VerticalOptions="Fill" Aspect="AspectFit" ></Image>
+        </Grid>
+    </Grid>
+
+</ContentPage>
